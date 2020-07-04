@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfUI.Views.ShellView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfUI.Views"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen" SizeToContent="WidthAndHeight"
+        Title="ShellView" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.ColumnSpan="2">
+            <Button x:Name="LoadImage" Content="More" Margin="50 0"/>
+            <TextBlock Text="Title:" Margin="0 0 20 0" VerticalAlignment="Center"/>
+            <TextBox x:Name="Title" MinWidth="300" ToolTip="Write description here..." />
+            <Button x:Name="SaveToDatabase" Content="Save To Database" Margin="50 0"/>
+        </DockPanel>
+           
+            
+        
+        <Image x:Name="FoxImageUrl" 
+               Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" />
+    </Grid>
+</Window>
