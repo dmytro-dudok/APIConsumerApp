@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[FoxImage]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Title] NVARCHAR(120) NOT NULL DEFAULT '-',
+    [ImageLink] NVARCHAR(100) NOT NULL 
+
+)
