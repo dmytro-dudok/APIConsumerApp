@@ -1,0 +1,23 @@
+﻿@model IEnumerable<AppDataManager.Library.Models.FoxImageModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="card-columns">
+    @foreach (var item in Model)
+    {
+        <div class="card">
+            <div class="card-img">
+                <img src="@item.ImageLink" alt="@item.Title" width="100%" />
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">@item.Title</h5>
+            </div>
+        </div>
+    }
+</div>
